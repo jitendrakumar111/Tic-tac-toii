@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Start Screen -->
+  <div class="start-screen" id="startScreen">
+    <h1>Tic-Tac-Toe</h1>
+    <pre>Developed by-Jitendra</pre>
+    <button id="singlePlayerBtn">Singleplayer</button>
+    <button id="multiPlayerBtn">Multiplayer</button>
+    <button id="leaderboardBtn">Leaderboard</button>
+  </div>
+
+  <!-- Multiplayer Options (hidden initially) -->
+  <div id="multiplayerOptions" style="display: none;">
+    <h2>Enter Player Names</h2>
+    <div id="playerNames">
+      <input type="text" id="player1Name" placeholder="Player 1 Name" />
+      <input type="text" id="player2Name" placeholder="Player 2 Name" />
+    </div>
+    <button id="startMultiplayerBtn">Start Multiplayer Game</button>
+  </div>
+
+  <!-- Game Container (hidden initially) -->
+  <div class="game-container" id="gameContainer" style="display: none;">
+    <h1>Tic-Tac-Toe</h1>
+
+    <select id="difficulty" style="display: none;">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+    <div class="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+    <button id="restart">Restart Game</button>
+    <p id="status"></p>
+
+    
+  </div>
+
+  <!-- Result Screen -->
+  <div class="result-screen" id="resultScreen" style="display: none;">
+    <h2 id="resultMessage"></h2>
+    <button id="newGameBtn">New Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
